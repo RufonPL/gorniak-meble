@@ -1,0 +1,56 @@
+@import '../include_helpers';
+
+
+
+.service {
+  &-container {
+    background: $brand-ash;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  &-header {
+    text-align: center;
+  }
+  &-subheader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+
+  &-item {
+    margin-bottom: 2rem;
+    background: #fff;
+    box-shadow: $shadow;
+    transition: .5s;
+    &:hover {
+      box-shadow: $shadow-hover;
+      transform: scale(1.05);
+      transition: 1s;
+    }
+    &-image {
+      min-height: 16rem;
+      display: block;
+      background-size: contain;
+      background-position: center;
+      transition: .3s;
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+        transition: .5s;
+      }
+    }
+    &-copy {
+      padding: 1.5rem 0.7rem 2.2rem 0.7rem;
+    }
+    &-header {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    &-description {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

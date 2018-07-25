@@ -1,0 +1,70 @@
+@import '../include_helpers';
+
+.latest-projects {
+  &-container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  &--header {
+    margin-bottom: 2.5rem;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-content {
+      opacity: 0;
+      transition: .3s;
+    }
+    &:hover &-content{
+      opacity: 1;
+      transition: .3s;
+    }
+    &-title {
+
+    }
+    &-copy {
+      margin-bottom: 1rem;
+    }
+    &-btn {
+      font-size: 0.9rem;
+      padding: .5rem 0.9rem;
+      background: none;
+      color: #000;
+      border: 1px solid #000;
+      transition: .3s;
+      &:hover {
+        color: #000;
+        background: #fff;
+        border: 1px solid #fff;
+        transition: .3s;
+      }
+    }
+  }
+  &-column {
+    .latest-projects-item {
+      background: $brand-ash;
+      margin-bottom: 2rem;
+      &:first-of-type {
+        min-height: 23rem;
+      }
+      &:last-of-type {
+        min-height: 18rem;
+      }
+    }
+    &:nth-of-type(3n){
+      .latest-projects-item {
+        &:first-of-type{
+          min-height: 18rem;
+        }
+        &:last-of-type {
+          min-height: 23rem;
+        }
+      }
+    }
+  }
+}

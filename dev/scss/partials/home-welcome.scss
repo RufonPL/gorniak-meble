@@ -1,0 +1,49 @@
+@import '../include_helpers';
+
+.welcome {
+  &-container {
+    position: relative;
+    padding-bottom: 6rem;
+  }
+  &-content {
+    border: 2px solid $brand-main;
+    padding: 3.5rem 8rem 2rem 2rem;
+    &-item {
+      margin: 1rem;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: $shadow;
+      transition: .3s;
+      transform: scale(1.00);
+      &:hover {
+        box-shadow: $shadow, $shadow-hover;
+        transition: .3s;
+        transform: scale(1.05);
+      }
+    }
+    &-counter {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    &-title {
+      margin: 0;
+    }
+  }
+  &-header {
+
+  }
+  &-image {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    padding: 4rem 0 0 1rem;
+    background-color: #fff;
+    &-box {
+      transform: translate(1rem, -1rem);
+      box-shadow: -1rem 2rem 0px 0px #888888;
+      background-size: cover;
+      width: 100%;
+      min-height: 23rem;
+    }
+  }
+}

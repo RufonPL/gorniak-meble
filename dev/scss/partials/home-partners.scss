@@ -1,0 +1,21 @@
+@import '../include_helpers';
+
+.partners {
+  &-container {
+    background-color: $brand-main;
+
+    &-item {
+      text-align: center;
+      transform: scale(1.0);
+      transition: .3s;
+      &:hover {
+        transform: scale(1.1);
+        transition: .5s;
+      }
+    }
+  }
+  &-row {
+    min-height: 20rem;
+    align-items: center;
+  }
+}
