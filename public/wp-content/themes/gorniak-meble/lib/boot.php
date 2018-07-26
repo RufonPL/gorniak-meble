@@ -17,7 +17,7 @@ function isStaging()
 
 function isLocalhost()
 {
-    return apply_filters('is_localhost', $_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'virtual.movecloser.pl' && false);
+    return apply_filters('is_localhost', $_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'virtual.movecloser.pl');
 }
 
 function isLocal()
