@@ -8,6 +8,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/app.scss';
+import '../scss/modules/single-offer.scss';
 
 
 // libs
@@ -24,5 +25,8 @@ import './modules/footer';
 // scripts
 
 $(document).ready( function () {
-    // document.write('elo');
+    $('.onload').addClass('loaded');
+    setTimeout(function() {
+        $('.onload').hide();
+    }, 1000);
 });

@@ -6,7 +6,7 @@
  */
 
 // image sizes
-add_theme_support('post-thumbnails');
+add_theme_support('post-thumbnails', 'menus');
 add_image_size('slider',1920,800,true);
 add_image_size('img_1920x350',1920,350,true);
 add_image_size('img_550x400',550,400,true);

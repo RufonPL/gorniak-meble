@@ -21,6 +21,10 @@
     }
   }
 
+  &-menu {
+    list-style: none;
+  }
+
   &-lower {
     min-height: 5rem;
     background: $brand-main;

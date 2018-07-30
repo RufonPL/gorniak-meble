@@ -47,7 +47,9 @@
   }
   &-column {
     .latest-projects-item {
-      background: $brand-ash;
+      background-color: $brand-ash;
+      background-position: center;
+      background-size: cover;
       margin-bottom: 2rem;
       &:first-of-type {
         min-height: 23rem;
