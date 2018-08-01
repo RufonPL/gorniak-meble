@@ -6,13 +6,13 @@
  */
 
 // image sizes
-add_theme_support('post-thumbnails', 'menus');
+add_theme_support('post-thumbnails');
 add_image_size('slider',1920,800,true);
 add_image_size('img_1920x350',1920,350,true);
 add_image_size('img_550x400',550,400,true);
 add_image_size('img_450x450',450,450,true);
 add_image_size('img_350x350',350,350,true);
-add_image_size('img_200x150',200,150,true);
+add_image_size('img_200x150',200,150,false);
 add_image_size('img_180x80',180,80,true);
 add_image_size('img_60x60',60,60,true);
 

@@ -2,7 +2,7 @@
 $counter_image = get_field('counter_image')['sizes']['img_1920x350'];
 ?>
 
-<div class="container-fluid counters-container" style="background-image: url(http://via.placeholder.com/1920x350)">
+<div class="container-fluid counters-container" style="background-image: url(<?= $counter_image ?>)">
     <div class="container">
         <div class="row align-items-center">
             <?php if (have_rows('repeater_counter')):

@@ -44,12 +44,15 @@
     font-weight: 700;
     margin: 1.6rem 0 0.7rem 0;
     line-height: 1.3;
+    text-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
     span {
       color: $brand-main;
     }
   }
   &-subheader {
     font-size: 1.6rem;
+    text-shadow: 1px 1px 10px #ccc, -1px -1px 10px #ccc;
+    color: #fff;
     span {
       color: $brand-main;
     }
