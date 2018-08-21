@@ -13,7 +13,8 @@ if (process.env.SCRIPT === "backend") {
 } else {
     base = {
         app: _path('dev/js/entry-app.js'),
-        home: _path('dev/js/entry-home.js')
+        home: _path('dev/js/entry-home.js'),
+        content: _path('dev/js/entry-content.js')
     };
     // if (process.env.SCRIPT === 'frontend_backend') {
     //     base['backend'] = backend;

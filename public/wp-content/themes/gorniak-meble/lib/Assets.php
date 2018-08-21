@@ -32,6 +32,11 @@ class Assets
                 $this->enqueue('home.js');
             }
 
+            if (is_page_template('page-template/page-content')) {
+                $this->enqueue('content.css');
+                $this->enqueue('content.js');
+            }
+
 //            $this->enqueue('bundle.css');
 //            $this->enqueue('bundle.js');
         });

@@ -1,6 +1,7 @@
 // modules imports
 
 import './modules/slick';
+import './partials/home-scroll';
 
 
 
