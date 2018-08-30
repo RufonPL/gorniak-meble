@@ -1,5 +1,11 @@
 <?php
 $ourprojects_title = get_field('ourprojects_title');
+$ourprojects_items = get_posts(array(
+    'post_type' => 'realization',
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+    'numberposts' => 6
+));
 ?>
 
 <div class="container latest-projects-container">
@@ -12,12 +18,13 @@ $ourprojects_title = get_field('ourprojects_title');
 
         <?php
         $i = 0;
-        if (have_rows('repeater_ourprojects')):
-            while (have_rows('repeater_ourprojects')) : the_row();
-                $ourprojects_header = get_sub_field('ourprojects_header');
-                $ourprojects_image = get_sub_field('ourprojects_image')['sizes']['img_350x350']; // size
-                $ourprojects_copy = get_sub_field('ourprojects_copy');
-                $ourprojects_link = get_sub_field('ourprojects_link');
+
+        if (!empty($ourprojects_items)):
+            foreach ($ourprojects_items as $realization):
+                $ourprojects_header = get_the_title($realization->ID);
+                $ourprojects_image = get_the_post_thumbnail_url($realization->ID, 'img_350x350'); // size
+                $ourprojects_exceprt = get_field('realization_excerpt', $realization->ID);
+                $ourprojects_link = get_permalink($realization->ID);
                 ?>
 
                 <?php if ($i % 2 === 0): ?>
@@ -30,7 +37,7 @@ $ourprojects_title = get_field('ourprojects_title');
                             <?= $ourprojects_header ?>
                         </h2>
                         <p class="latest-projects-item-copy">
-                            <?= $ourprojects_copy ?>
+                            <?= $ourprojects_exceprt ?>
                         </p>
                         <?php if ($ourprojects_link): ?>
                             <a class="latest-projects-item-btn"
@@ -46,8 +53,8 @@ $ourprojects_title = get_field('ourprojects_title');
                 <?php endif; ?>
 
 
-                <?php $i++; ?>
-            <?php endwhile;
+                <?php $i++;
+            endforeach;
         endif; ?>
     </div>
 </div>
