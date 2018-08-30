@@ -18,20 +18,20 @@ $specialization_main_image = get_field('specialization_main_image')['sizes']['im
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-12 col-md-6">
+            <div class="col-md-12 col-lg-6">
                 <div class="specialization-mainimage"
                      style="background-image: url(<?= $specialization_main_image ?>);">
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 specialization-items">
+            <div class="col-md-12 col-lg-6 specialization-items">
                 <div class="row">
                     <?php if (have_rows('repeater_specialization')):
                     while (have_rows('repeater_specialization')) : the_row();
                         $specialization_box_title = get_sub_field('specialization_box_title');
                         $specialization_box_image = get_sub_field('specialization_box_image')['sizes']['img_60x60'];
                     ?>
-                        <div class="6 col-md-4 specialization-item">
+                        <div class="col-sm-6 col-md-4 specialization-item">
                             <div class="specialization-item-inner">
                                 <img class="specialization-item-image" src="<?= $specialization_box_image ?>" alt="">
                                 <h5 class="specialization-item-title">
