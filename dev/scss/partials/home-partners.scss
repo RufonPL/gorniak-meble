@@ -1,8 +1,22 @@
 @import '../include_helpers';
 
 .partners {
+  &-header {
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+  }
+  &-subheader {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 2.2rem;
+    color: #fff;
+  }
+
   &-container {
     background-color: $brand-main;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
     &-item {
       text-align: center;
@@ -15,7 +29,7 @@
     }
   }
   &-row {
-    min-height: 20rem;
+    min-height: 10rem;
     align-items: center;
   }
 }
