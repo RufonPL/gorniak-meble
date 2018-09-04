@@ -9,7 +9,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/app.scss';
 import '../scss/modules/single-offer.scss';
-
+import '../scss/partials/home-latest-projects.scss';
 
 // libs
 

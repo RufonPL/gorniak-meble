@@ -1,9 +1,11 @@
 <?php
 $ourprojects_title = get_field('ourprojects_title');
+$ourprojects_list_page_url = get_permalink(243);
 $ourprojects_items = get_posts(array(
     'post_type' => 'realization',
     'post_status' => 'publish',
     'posts_per_page' => -1,
+    'orderby' => 'rand',
     'numberposts' => 6
 ));
 ?>
@@ -56,5 +58,10 @@ $ourprojects_items = get_posts(array(
                 <?php $i++;
             endforeach;
         endif; ?>
+    </div>
+    <div class="col-12 latest-projects-seemore">
+        <a class="btn btn-primary" href="<?= $ourprojects_list_page_url; ?>">
+            ZOBACZ WIĘCEJ
+        </a>
     </div>
 </div>
