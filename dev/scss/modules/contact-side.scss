@@ -1,0 +1,44 @@
+@import '../include_helpers';
+
+.contact {
+  &-side {
+    &-container {
+
+    }
+    &-inner {
+      position: relative;
+    }
+    &-phone {
+      position: absolute;
+      top: 10rem;
+    }
+    &-email {
+      position: absolute;
+      top: 14.1rem;
+    }
+    &-item {
+      position: fixed;
+      z-index: 400;
+      color: #fff;
+      padding: 1rem;
+      right: -9rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      background: $brand-main;
+      transition: .3s;
+      min-width: 13rem;
+      text-align: left;
+      &:hover {
+        color: #fff;
+        right: 0;
+        transition: .3s;
+      }
+    }
+  }
+  &-icon-thumb {
+    max-width: 2rem;
+    margin-right: 1rem;
+  }
+}

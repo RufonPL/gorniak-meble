@@ -21,6 +21,7 @@ import 'bootstrap';
 
 import './modules/top-navbar';
 import './modules/footer';
+import './modules/contact-side';
 
 // scripts
 

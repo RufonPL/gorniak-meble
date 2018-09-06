@@ -74,8 +74,15 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     .btn {
+      padding: .7rem 2rem;
       background: $brand-main;
       border-radius: 0;
+      border:none;
+      &:hover {
+        opacity: 0.7;
+        transition: .3s;
+        cursor: pointer;
+      }
     }
   }
   &-column {
