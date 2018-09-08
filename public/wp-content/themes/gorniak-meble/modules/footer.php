@@ -15,11 +15,11 @@ $footer_header_col4 = get_field('footer_col4_header', PAGE_HOME);
     <div class="container-fluid footer-container">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 footer-disclaimer">
+                <div class="col-12 col-md-6 col-lg-3 footer-disclaimer">
                     <img src="<?= $site_logo ?>" alt="">
                     <?= $footer_content_col1 ?>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 footer-contact">
+                <div class="col-12 col-md-6 col-lg-3 footer-contact">
                     <h5 class="footer-header">
                         <?= $footer_header_col2 ?>
                     </h5>
@@ -29,19 +29,19 @@ $footer_header_col4 = get_field('footer_col4_header', PAGE_HOME);
                         'menu_class' => 'footer-menu'));
                     ?>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 footer-menu">
+                <div class="col-12 col-md-6 col-lg-3 footer-menu">
                     <h5 class="footer-header">
                         <?= $footer_header_col3 ?>
                     </h5>
                     <?= $footer_content_col3 ?>
                 </div>
-<!--                <div class="col-12 col-md-6 col-lg-3 footer-newsletter">-->
-<!--                    <h5 class="footer-header">-->
-<!--                        --><?//= $footer_header_col4 ?>
-<!--                    </h5>-->
-<!--                    --><?//= $footer_content_col4 ?>
-<!--                </div>-->
-<!--            </div>-->
+                <div class="col-12 col-md-6 col-lg-3 footer-newsletter">
+                    <h5 class="footer-header">
+                        <?= $footer_header_col4 ?>
+                    </h5>
+                    <?= $footer_content_col4 ?>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid footer-lower">

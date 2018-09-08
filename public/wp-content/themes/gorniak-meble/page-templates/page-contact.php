@@ -11,7 +11,7 @@ get_header(); ?>
                 <?php echo wpautop($post->post_content, true);?>
             </div>
             <div class="contact-form">
-
+                <?php echo do_shortcode(get_field('shortcode_contact_form'));?>
             </div>
         </div>
     </div>

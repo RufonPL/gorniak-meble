@@ -11,10 +11,20 @@
     &-phone {
       position: absolute;
       top: 10rem;
+      &.animation {
+        animation-name: show-side;
+        animation-duration: .8s;
+        animation-delay: 1s;
+      }
     }
     &-email {
       position: absolute;
-      top: 14.1rem;
+      top: 14.3rem;
+      &.animation {
+        animation-name: show-side;
+        animation-duration: .8s;
+        animation-delay: 1.5s;
+      }
     }
     &-item {
       position: fixed;
@@ -30,6 +40,7 @@
       transition: .3s;
       min-width: 13rem;
       text-align: left;
+      border: 1px solid rgba(255,255,255,.25);
       &:hover {
         color: #fff;
         right: 0;
@@ -41,4 +52,10 @@
     max-width: 2rem;
     margin-right: 1rem;
   }
+}
+
+@keyframes show-side {
+  0%    {right: -9rem;}
+  50%   {right: -3rem;}
+  100%  {right: -9rem;}
 }
