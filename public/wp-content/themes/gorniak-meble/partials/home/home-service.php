@@ -23,7 +23,7 @@ $service_subtitle = get_field('service_subtitle');
                     $service_btn_copy = get_sub_field('service_btn_copy');
                     $service_btn_href = get_sub_field('service_btn_href');
                     ?>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6">
                         <div class="service-item">
                             <a class="service-item-image"
                                href="<?= $service_btn_href ?>"
