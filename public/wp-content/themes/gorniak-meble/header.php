@@ -23,6 +23,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Global site tag (gtag.js) - AdWords: 785030489 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-785030489"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-785030489'); </script>
+
     <?php wp_head(); ?>
 </head>
 <body>
